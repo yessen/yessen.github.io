@@ -4,203 +4,318 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test Site</title>
+  <link rel="stylesheet" href="mystyle.css">
+  <title>CSS Design</title>
 </head>
 <body>
-  <h1>Lecture 1: Introduction to HTML</h1>
-  <hr>
-  <h1>Lecture 2: Basics of HTML</h1>
-  <hr>
-  <h1>Lecture 3: Essential HTML elements</h1>
+  <!-- HEADER -->
+  <header>
+    <div class="banner">Web Programming...</div>
+  </header>
 
-  <h2>HTML Content Model</h2>
-  <div> I'm testing my web page!!!!</div><span>Added an inline SPAN content. </span>
-  <strong>Added some BOLD content</strong>
-  <a href="#history">Some URL</a>
-  <br><br>
-  <div>
-    Lorem ipsum dolor, <strong> sit amet consectetur</strong> adipisicing elit. 
-     Quis reprehenderit officia laudantium eaque provident, 
-     <a href="#history"> nulla cumque</a>.
-     <div> <strong> Some other block-level content </strong></div>
-     Consectetur, eos facilis temporibus 
-     placeat reiciendis obcaecati? Dolorem voluptatibus, 
-     unde accusamus nisi&nbsp;culpa&nbsp;praesentium!
-  </div>
-  <span>This is a SPAN content. <div>Some other block content</div> 
-  You cannot put inside a block-level element</span>
-  <a href="https://validator.w3.org/#validate_by_input">Validate HTML</a>
+  <!-- Navbar -->
+  <nav>
+      <a class="logo" href="#">
+        <img src="logo.png" alt="logo" width="80px" height="80px">
+      </a>
+      <ul class="menu">
+        <li><a class="nav_a active" href="#task">Task</a></li>
+        <li><a class="nav_a" href="#requirements">Requirements</a></li>
+        <li><a class="nav_a" href="#submission">Submission</a></li>
+        <li><a class="nav_a" href="#grading">Grading</a></li>
+        <li><a class="nav_a" href="#deadline">Deadline</a></li>
+        <li><a class="signin" href="https://www.wikipedia.org/">SignIn</a></li>
+      </ul>
+  </nav>
 
-  <hr>
-  <hr>
+  <!-- Main Content -->
+  <section class="main_content">
+    <h1 id="main-heading" class="topic">
+      Lab 4 - Designing with CSS 
+    </h1>
+    <hr>
+    <article id="task">
+      <h2 class="task_h2">Task</h2>
+      <p class="task_content">
+        <img src="nature.jpeg" alt="" width="300px" height="210">
+        As you have alredy learned in the last lecture, 
+        CSS is about the presentation of the documents
+        like HTML or XML.
+        So, in this lab assignment you need to form a group of two people and then together apply
+        CSS styling rules to make this template HTML file look
+        beautiful and interesting.  
+      </p>
+      <p class="task_content">
+        There are no 
+        limits to what techniques you use and how you 
+        ultimately solve this task. 
+        However, there are some minimal requirements
+        which are explained in the next section below.
+        <a href="#requirements">Next...</a>
+      </p>
+    </article>
+    <article id="requirements">
+      <h2 >Requirements</h2>
+      <p class="requirements_content">
+        The main requirement for this task is to 
+        style this HTML document without any 
+        changes (including adding new and deleting the existing elements) to itself except for these cases: 
+        <ul class="requirements_content">
+          <li>
+            You can add <strong>id</strong>
+            and <strong>class</strong> 
+            attributes to the ncessary elements. 
+            </li>
+            <li>
+            You can replace the 
+            images in the defined elements within this document with your
+            own ones. 
+            </li><li>
+            Notice that there is a place for a 
+            large banner on the top of the page,
+            you <strong>must</strong> place an image there only using CSS.
+            </li>
+            <li>
+              You <strong>must</strong> write your names in the specified fields below.
+            </li>
+            <li>You can change the location
+              of in the map below or replace it with the image.
+            </li>
+        </ul>
+      </p>
+      <p class="requirements_content">
+        In your stylesheet you <strong>must</strong>
+         use these selectors:
+        <ul class="requirements_content">
+          <li>Element selectors;</li>
+          <li>Class selectors;</li>
+          <li>Attribute selectors;</li>
+          <li>ID selectors.</li>
+          <li>Pseudo-class selectors.</li>
+        </ul>
+      </p>
+      <p class="requirements_content">
+        Also, you <strong>must</strong> 
+        use the necessary CSS properties
+        and demonstrate the following changes
+        of the elements:
+        <ul class="requirements_content">
+          <li>font and background colors;</li>
+          <li>font family and size;</li>
+          <li>margin, padding and borders;</li>
+          <li>image sizes (width and height);</li>
+          <li>text alignment (horizontal and vertical);</li>
+        </ul>
+        Additionally, a special focus <strong>must</strong> 
+        be done to the menu links.        
+        They need to change their status appropriately 
+        (active, hover, visited)
+        as well as be placed in a natural way,
+        i.e. horizontally or vertically. 
+        <a  class="requirements_content" href="#submission">Next...</a>
+      </p>
+    </article>
+    <article id="submission">
+      <h2 >Submission</h2>
+      <p class="submission_content">
+       As usual, you <strong>must</strong> submit 
+       your work via Github. All the files and images need to go to 
+       your <strong> <i>username.github.io</i> </strong>repository. 
+       Also, this page must be available 
+       through this domain name.
+      </p>
+      <h3 class="submission_content">Group</h3>
+      <p class="submission_content">
+        Since this is a group project, i.e. a team of two members,
+        it is required to insert a photo of your group
+        in this <strong>&lt;img&gt;</strong> element and write your names in the
+        following list items. <br>
+         <img src="planets.jpeg" alt="" width="300px" height="210">
 
-  <!--H1 vs DIV-->
-  <h2 id="history">H1 vs DIV</h2>
-  <h1>Hello, World!</h1>
-  <div style="font-size: 32px; font-weight: bold;">Hello, World!</div>
+        <ul class="names">
+          <li>Full Name 1</li>
+          <li>Full Name 2</li>
+        </ul>
+        Also, to submit your group members, 
+        please fill in the this 
+        <a href="#">Google Sheet</a> form. 
+        <a href="#grading">  Next...</a>
+      </p>
+    </article>
+    <article id="grading">
+      <h2>Grading</h2>
+      For this assignment you will get 
+      <strong>80 points</strong>  in total.
+      The final score is the sum of the points 
+      for each of the criteria below.
+      This score will be the same for both 
+      of the team members.
+      <table class="grading_content">
+        <tr>
+          <th>Criteria</th>
+          <th>Points</th>
+        </tr>
+        <tr>
+          <td>Group is formed </td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>CSS file is linked to the document</td>
+          <td>5 pts</td>
+        </tr>
+        <tr>
+          <td>Banner image is present</td>
+          <td>5 pts</td>
+        </tr>
+        <tr>
+          <td>Menu is styles appropriately</td>
+          <td>5 pts</td>
+        </tr>
+        
+        <tr>
+          <td>Group photo is present </td>
+          <td>5 pts</td>
+        </tr>
+         <tr>
+          <td>HTML file is unchanged</td>
+          <td>5 pts</td>
+        </tr>
+        <tr>
+          <td>Required selectors are used</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Required CSS properties are used</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Website is available online</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Website looks nice and not broken</td>
+          <td>10 pts</td>
+        </tr>
+        <tr>
+          <td>Extra cool stuff is used</td>
+          <td>5 pts</td>
+        </tr>
+        </tr>
+      </table>
+    </article>
+  </section>
 
-  <p>Lorem ipsum dolor sit amet consectetur, <br>
-    adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-    et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-    Ullam commodi dignissimos excepturi maiores expedita ratione.
-  </p>
+  <!-- Aside Information -->
+  <aside>
+    <h3 class="deadline_h3">Important</h3>
+    <section class="deadline_content">
+      <article id="deadline">
+        <h4 class="deadline_h4">Deadlines:</h4>
+        There are two deadlines - one for 
+        forming a group and the other is for the 
+        submission of the assignment itself.
+        <ul>
+          <li>Group: Sep. 9, 2022, 23:59</li>
+          <li>Submission: Sep. 18, 2022, 23:59</li>
+        </ul>
+        <p>
+        Missing the deadline for the group formation will result in 
+        <strong> not getting any points</strong> for the corresponding criteria. <br>
+        </p>
+        <p>And, as usual, missing the deadline for submittion of your work will result in reduction of your score by 50%.</p>
+        
+        <a href="#">More...</a>
+      </article>
+    </section>
+     
+    <h3 class="dummy_h3">Some Dummy Content</h3>
+    <section>
+      <article class="dummy">
+        <h4>Article 1</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Odit, fugiat eveniet! 
+          Optio quia perspiciatis earum ipsa dicta 
+          porro dolorum facere laudantium repellat 
+          ad necessitatibus asperiores dolor, molestias 
+          officiis corrupti iusto.
+          <a href="#">More...</a>
+        </p>
+      </article>
+      <article class="dummy">
+        <h4>Article 2</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Odit, fugiat eveniet! 
+          Optio quia perspiciatis earum ipsa dicta 
+          porro dolorum facere laudantium repellat 
+          ad necessitatibus asperiores dolor, molestias 
+          officiis corrupti iusto.
+          <a href="#">More...</a>
+        </p>
+      </article>
+      <article class="dummy" >
+        <h4>Article 3</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, 
+          adipisicing elit. Odit, fugiat eveniet! 
+          Optio quia perspiciatis earum ipsa dicta 
+          porro dolorum facere laudantium repellat 
+          ad necessitatibus asperiores dolor, molestias 
+          officiis corrupti iusto.
+          <a href="#">More...</a>
+        </p>
+      </article>
+    </section>
+  </aside>
 
-  <p>Lorem ipsum dolor sit amet consectetur, <br>
-    adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-    et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-    Ullam commodi dignissimos excepturi maiores expedita ratione.
-  </p>
-  <hr>
-  <hr>
-
-<h2>Semantic tags</h2>
-<!-- Semantic sections -->
-
-<section>
-  <h3>Semantic tags</h3>
-
-  <article>Lorem ipsum dolor sit amet consectetur, <br>
-      adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-      et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-      Ullam commodi dignissimos excepturi maiores expedita ratione. <br>
-  </article>
-  <br>
-  <article>Lorem ipsum dolor sit amet consectetur, <br>
-      adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-      et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-      Ullam commodi dignissimos excepturi maiores expedita ratione.
-  </article>
-</section>
-<hr>
-
-
-<!-- Sections with DIV-->
-  <div>
-    <div style="font-size: 18px; font-weight: bold;"
-    id="my_div">
-      Only DIV tags
+  <!-- FOOTER -->
+  <footer>
+    <div class="contacts">
+      <div class="text_contacts">
+        <h5>Contacts</h5>
+        <p>
+          Nazarbayev University <br>
+          53 Kabanbay Batyr ave. <br>
+          Block 7, Room 7.422 <br>
+          Ph.: +7-7172-123-4567 <br>
+          <a href="mailto:info@naturallyinspired.com" class="email">
+            info@naturallyinspired.com
+          </a>
+        </p>
+      </div>
+      <div class="map">
+          <iframe src="https://maps.google.com/maps?q=Nazarbayev%20university,%20Nur-Sultan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+      </div>
     </div>
-    <br>
-    <div>Lorem ipsum dolor sit amet consectetur, <br>
-    adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-    et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-    Ullam commodi dignissimos excepturi maiores expedita ratione.
+    <div class="categories">
+      <h5>Top 10 Categories</h5>
+      <ul>
+        <li><a href="#">Category 1</a></li>
+        <li><a href="#">Category 2</a></li>
+        <li><a href="#">Category 3</a></li>
+        <li><a href="#">Category 4</a></li>
+        <li><a href="#">Category 5</a></li>
+        <li><a href="#">Category 6</a></li>
+        <li><a href="#">Category 7</a></li>
+        <li><a href="#">Category 8</a></li>
+        <li><a href="#">Category 9</a></li>
+        <li><a href="#">Category 10</a></li>
+      </ul>
     </div>
-    <br>
-
-    <div>Lorem ipsum dolor sit amet consectetur, <br>
-      adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-      et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-      Ullam commodi dignissimos excepturi maiores expedita ratione.
+    <div class="quick_links">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="#">Item1</a></li>
+        <li><a href="#">Item2</a></li>
+        <li><a href="#">Item3</a></li>
+        <li><a href="#">Item4</a></li>
+        <li><a href="#">Item5</a></li>
+        <li><a href="#">Item6</a></li>
+      </ul>
     </div>
-  </div>
-
-
-  <hr>
-  <hr>
-
-  <!-- Links-->
-<h2>Links</h2>
-<a href="#my_div">Page Fragment</a><br>
-<a href="students_pages.html">Some internal page</a><br>
-<a href="http://w3.org">Some external link</a><br>
-<a href="http://w3.org"><img src="w3.org.png" width="50px"></a><br>
-<a href="mailto:email">Email link</a><br>
-
-<br><br>
-<div>
-  Use <strong>target</strong> attrbute of &lt;a&gt; tag to:
-  <ul>
-    <li>open in <a href="index_html_css.html" target="_blank">new window</a></li>
-    <li>open in <a href="index_html_css.html" target="_self">current window</a> </li>
-  </ul>
-</div>
-
-  <hr>
-  <hr>
-
-<!-- Semantic tags and Menu-->
- <header>
-   <h4>Header</h4>
-   <nav>
-     <h5>Menu with Lists</h5>
-     <ul>
-       <li><a href="#history">Menu Item 1</a></li>
-       <li><a href="index_html_css.html">Menu Item 2</a></li>
-       <li><a href="https://www.w3.org/TR/2011/WD-html5-20110525/content-models.html#content-models 
-" target="_blank">Menu Item 3</a></li>
-     </ul>
-   </nav>
- </header>
-
- <section>
-   <h4>Section</h4>
-  <p>Lorem ipsum dolor sit amet consectetur, <br>
-    adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-    et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-    Ullam commodi dignissimos excepturi maiores expedita ratione.
-  </p>
-
-  <p>Lorem ipsum dolor sit amet consectetur, <br>
-   adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-   et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-   Ullam commodi dignissimos excepturi maiores expedita ratione.
-  </p>
-
-  <p>Lorem ipsum dolor sit amet consectetur, <br>
-   adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-   et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-   Ullam commodi dignissimos excepturi maiores expedita ratione.
-  </p>
-</section>
-
-<aside>
-  <h4>Aside</h4>
-  <p>Lorem ipsum dolor sit amet consectetur, <br>
-   adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-   et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-   Ullam commodi dignissimos excepturi maiores expedita ratione.
-  </p>
-</aside>  
-<hr>
-
-<footer>
-  <h4>Footer</h4>
-  <p>Lorem ipsum dolor sit amet consectetur, <br>
-   adipisicing elit. Odit impedit asperiores in voluptatibus vero,  <br> 
-   et deleniti. Nemo est id omnis illo laboriosam eum? <br>
-   Ullam commodi dignissimos excepturi maiores expedita ratione.
-  </p>
-</footer>
-
-<hr>
-<hr>
-<h2>Images</h2>
-<img src="_w3.org.png" width="200px" height="100px" alt="W3.org's logo">
-<img src="_w3.org.png" width="200px" height="50px" >
-<img src="w3.org.png" width="200px" height="50px">
-<img src="w3.org.png" width="200px">
-<img src="w3.org.png">
-<hr>
-<hr>
-
-<h2>Escape Characters</h2>
-
-There are 3 main charactes to be escaped:
-<ul>
-  <li>use &amp;lt; to escape &lt; symbol </li>
-  <li>use &amp;gt; to escape &gt; symbol </li>
-  <li>use &amp;amp; to escape &amp; symbol </li>
-</ul>
-
-Useful escape symbols:
-<ul>
-  <li>&amp;quot; (&quot;)  - to make a quotation </li>
-<li> &amp;nbsp;  (&nbsp;) - to&nbsp;insert&nbsp;non-breaking&nbsp;space</li>
-<li>&amp;copy(&copy) – copyright symbol</li>
-
-</ul>
-
-
+  </footer>
 </body>
 </html>
