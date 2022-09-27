@@ -29,6 +29,11 @@ div.banner {
   height: 30vh;
 }
 
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
 nav {
   position: sticky;
   display: flex;
@@ -414,6 +419,7 @@ footer h5 {
 
 .contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 33.33%;
 }
@@ -440,8 +446,8 @@ footer iframe {
 
 .categories ul {
   display: flex;
-  justify-content: left;
   flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   list-style-type: none;
 }
@@ -510,6 +516,11 @@ footer iframe {
     font-size: 1.5em;
   }
 
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
   ul.menu li {
     font-size: 0.5em;
   }
@@ -541,19 +552,35 @@ footer iframe {
   }
 
   footer {
+    padding: 1em;
     font-size: 0.8em;
   }
 
   .contacts,
   .categories,
   .quick_links {
+    display: block;
+    margin: 0;
     margin-top: 5vh;
     width: 100%;
+  }
+
+  .contacts ul,
+  .categories ul,
+  .quick_links ul {
+    margin: 0;
+    width: 100%;
+    text-align: center;
   }
 
   .contacts h5,
   .categories h5,
   .quick_links h5 {
     text-align: center;
+  }
+
+  footer iframe {
+    margin-top: 1em;
+    padding-left: 0;
   }
 }
